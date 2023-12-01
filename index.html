@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+    <!-- todo: add a favicon -->
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap's CSS CDN references -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg container-fluid navbar-dark bg-dark fixed-top d-flex">
+            <a href="#home" class="navbar-brand">
+                <span class="fw-bolder text-secondary">COBOL IT Solutions</span>
+            </a>
+            <div class="collapse navbar-collapse" id="nav-bar-links">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar-links"
+                aria-controls="nav-bar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero m-5 p-5">
+            <div class="container-lg">
+                <div class="row justify-content-center align-item-center align-content-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h2>
+                            <div class="display-2">COBOL IT Solutions</div>
+                            <div class="display-5 text-muted">one stop slution for full stack develoment</div>
+                        </h2>
+                    </div>
+                    <div class="col-md-5 text-center d-none d-md-block">
+                        <img src="assets/company-building.jpg" alt="company photo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services bg-light border p-5">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Services</h2>
+                    <p class="lead text-muted">The following services can be requested.</p>
+                </div>
+
+                <div
+                    class="row my-5 justify-content-center align-content-center align-item-center align-content-center">
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-1">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Mobile Development</h4>
+                                <p class="lead card-subtitle">Covers iOS, Android and React native</p>
+                                <img src="assets/mobile-development.jpeg" class="img-fluid" alt="mobile-development">
+                                <a href="#" class="btn btn-outline-secondary btn-lg mt-3">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-4 col-xl-3">
+                        <div class="card border-1">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Full Stack Development</h4>
+                                <p class="lead card-subtitle">Covers front-end, back-end and database</p>
+                                <img src="assets/full-stack-dev.png" class="img-fluid" alt="full-stack-dev">
+                                <a href="#" class="btn btn-outline-secondary btn-lg mt-3">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-lg-4 col-xl-3 mw-100">
+                        <div class="card border-1">
+                            <div class="card-body text-center py-4">
+                                <h4 class="card-title">Cloud Infra Development</h4>
+                                <p class="lead card-subtitle">Covers AWS, Azure and GCP</p>
+                                <img src="assets/cloud-computing.jpg" class="img-fluid" alt="cloud-computing">
+                                <a href="#" class="btn btn-outline-secondary btn-lg mt-3">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about p-5">
+            <div class="container-md">
+                <div class="text-center">
+                    <h2>About</h2>
+                    <p class="leadltext-muted">A quick glance at us</p>
+                </div>
+
+                <div class="row my-5 g-5 justify-content-around align-items-center">
+                    <div class="col-6 col-lg-4">
+                        <img src="assets/the-team.jpg" alt="the-team" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="accordion" id="chapters">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                                        About our history
+                                    </button>
+                                </h2>
+                                <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                                    data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>COBOL it solutions, commonly referred to as COBOL, is a
+                                            multinational professional services network. COBOL is the largest
+                                            professional
+                                            services network by revenue and number of professionals in the world and is
+                                            considered one of the Big Four accounting firms along with EY, KPMG and PwC.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-2">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                                        The leadership
+                                    </button>
+                                </h2>
+                                <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                                    data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>Named president and CEO in late 2014 by the COBOL Board of Directors, John
+                                            Doe oversees the future development and growth of COBOL’s business,
+                                            including operations of our partner company, Integrity Insurance. He joined
+                                            COBOL in 2008 as president of personal and later assumed additional
+                                            responsibility for the commercial business as chief property and
+                                            casualty officer. With more than 10 years of experience, he
+                                            previously held a variety of leadership positions with Kemper,
+                                            Safeco and GEICO.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-3">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                                        F1 sponsorship
+                                    </button>
+                                </h2>
+                                <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                                    data-bs-parent="#chapters">
+                                    <div class="accordion-body">
+                                        <p>In May 2017, COBOL entered into a partnership with McLaren Applied
+                                            Technologies (MAT) to combine COBOL's experience in delivering large
+                                            consulting projects and MAT's experience of engineering, sensors, simulation
+                                            and analytical analysis. Prior to this, MAT had entered into a similar
+                                            partnership with competitor KPMG in a ten-year deal in 2014 but it was
+                                            terminated by KPMG in 2017. The partnership was later extended to
+                                            MAT sister company McLaren Racing in June 2020 where COBOL will work with
+                                            McLaren to enhance the performance of the team and its cars. In May
+                                            2023, COBOL and McLaren Racing signed a multi-year partnership
+                                            extension.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid bg-secondary p-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 py-5 my-5 border-top">
+            <div class="col mb-3 d-flex flex-column align-items-center">
+                <a href="#home" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                    <span class="fw-bolder">COBOL IT Solutions</span>
+                </a>
+                <ul class="nav col-md-3 justify-content-start list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/" target="_blank"><i
+                                class="bi bi-twitter-x"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/" target="_blank"><i
+                                class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank"><i
+                                class="bi bi-facebook"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3 d-flex flex-column align-items-center">
+                <h6>Contact</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="https://maps.app.goo.gl/7EdT2MV1UfWFAK7X7"
+                            class="nav-link p-0 text-body-secondary" target="_blank"><i class="bi bi-map"></i>
+                            <address>157 Berkeley St,<br>Boston, MA 02116</address>
+                        </a></li>
+                    <li class="nav-item mb-2"><a href="tel:18002908711" class="nav-link p-0 text-body-secondary"
+                            target="_blank"><i class="bi bi-telephone"></i> +1 (800) 290-8711</a></li>
+                    <li class="nav-item mb-2"><a href="mailto:test@libertymutual.com"
+                            class="nav-link p-0 text-body-secondary" target="_blank"><i class="bi bi-envelope"></i>
+                            test@libertymutual.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap's JS CDN references -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
